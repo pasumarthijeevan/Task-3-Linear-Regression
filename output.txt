@@ -1,0 +1,72 @@
+C:\Users\DELL\Desktop\elevate\elevate_task3>py -3.11 linear.py
+['price', 'area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'furnishingstatus']
+      price  area  bedrooms  bathrooms  stories  ... hotwaterheating airconditioning parking prefarea furnishingstatus
+0  13300000  7420         4          2        3  ...              no             yes       2      yes        furnished
+1  12250000  8960         4          4        4  ...              no             yes       3       no        furnished
+2  12250000  9960         3          2        2  ...              no              no       2      yes   semi-furnished
+3  12215000  7500         4          2        2  ...              no             yes       3      yes        furnished
+4  11410000  7420         4          1        2  ...              no             yes       2       no        furnished
+
+[5 rows x 13 columns]
+First 5 Rows:
+      price  area  bedrooms  bathrooms  stories  ... hotwaterheating airconditioning parking prefarea furnishingstatus
+0  13300000  7420         4          2        3  ...              no             yes       2      yes        furnished
+1  12250000  8960         4          4        4  ...              no             yes       3       no        furnished
+2  12250000  9960         3          2        2  ...              no              no       2      yes   semi-furnished
+3  12215000  7500         4          2        2  ...              no             yes       3      yes        furnished
+4  11410000  7420         4          1        2  ...              no             yes       2       no        furnished
+
+[5 rows x 13 columns]
+
+Dataset Information:
+<class 'pandas.DataFrame'>
+RangeIndex: 545 entries, 0 to 544
+Data columns (total 13 columns):
+ #   Column            Non-Null Count  Dtype
+---  ------            --------------  -----
+ 0   price             545 non-null    int64
+ 1   area              545 non-null    int64
+ 2   bedrooms          545 non-null    int64
+ 3   bathrooms         545 non-null    int64
+ 4   stories           545 non-null    int64
+ 5   mainroad          545 non-null    str
+ 6   guestroom         545 non-null    str
+ 7   basement          545 non-null    str
+ 8   hotwaterheating   545 non-null    str
+ 9   airconditioning   545 non-null    str
+ 10  parking           545 non-null    int64
+ 11  prefarea          545 non-null    str
+ 12  furnishingstatus  545 non-null    str
+dtypes: int64(6), str(7)
+memory usage: 69.2 KB
+None
+
+Missing Values:
+price               0
+area                0
+bedrooms            0
+bathrooms           0
+stories             0
+mainroad            0
+guestroom           0
+basement            0
+hotwaterheating     0
+airconditioning     0
+parking             0
+prefarea            0
+furnishingstatus    0
+dtype: int64
+
+Evaluation Metrics
+-----------------------
+MAE : 1265275.6699454375
+MSE : 2750040479309.052
+R2 Score : 0.45592991188724463
+
+Model Coefficients
+area : 345.46657008311115
+bedrooms : 360197.6504575056
+bathrooms : 1422319.6576414115
+Intercept : 59485.379208717495
+
+Task Completed Successfully!
